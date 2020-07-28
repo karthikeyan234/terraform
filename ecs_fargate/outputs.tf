@@ -33,3 +33,7 @@ output "ecs_public_subnets" {
 output "ecs_private_subnets" {
   value = data.terraform_remote_state.infrastructure.outputs.private_subnets
 }
+
+output "dns_name" {
+  value = aws_alb.ecs_cluster_alb.dns_name
+}

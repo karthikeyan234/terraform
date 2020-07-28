@@ -8,8 +8,8 @@ internet_cidr_blocks = "0.0.0.0/0"
 
 # service variables
 ecs_service_name = "springbootapp"
-docker_container_port = 8080
+docker_container_port = 80
 desired_task_number = "2"
 spring_profile = "default"
-memory = 1024
+memory = 2048
 docker_image_url = "341808978070.dkr.ecr.ap-south-1.amazonaws.com/terraform:latest"
